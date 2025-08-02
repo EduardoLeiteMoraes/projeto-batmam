@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+header{
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav{
+    width: 60%;
+}
+ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+li a{
+    color:aliceblue;
+    list-style: none;
+    cursor: pointer;
+    font-size: 15px;
+    transition: .5s;
+    font-family: 'kdam thmor pro',sans-serif;
+
+}
+li a:hover{
+    color:#d21617;
+}
+#logo{
+    width: 150px;
+    height: 90px;
+}
+.containnerCo{
+    height:1000px;
+    width: 100%;
+    background-color: aquamarine;
+}
+  .texto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+  margin-top: 20px;
+  background-color: aquamarine;
+  
+  }
+  
+  h1 {
+    color: crimson;
+    font-family: 'kdam thmor pro',sans-serif;
+  background-color: aquamarine;
+
+  }
+  .containnerGi{
+    height: 350px;
+    width: 100%;
+    background-color: aquamarine;
+    display: flex;
+    align-items:flex-start
+    
+  }
+  .imagemGi{
+    height: 300px;
+    width: 200px;
+    background-color:aquamarine;  
+    margin-left: 20px;
+    border-radius: 5px;
+    border:3px solid #d21617;
+  }
+  .imagemGi img {
+      height:300px;
+      width:200px;
+    transition: 0.3s ease-in-out;
+    background-color:aquamarine;  
+
+  }
+  
+  /* Quando o mouse passa por cima da div */
+  .imagemGi:hover img {
+    content: url('contatos/35o77wnx90q91.jpg');
+    background-color: aquamarine;
+  }
+
+.sinopse{
+   height: 350px;  
+      width: 100%;
+      background-color:aquamarine;
+      margin-left: 15px;
+      display: flex;
+      flex-direction: column;
+}
+h3{
+    height: 100px;
+    width: 100%;
+    color:rgb(7, 7, 15);
+    background-color:aquamarine;
+    font-size: 30px;
+    margin-top: 40px;    
+    margin-left: 15px;
+    
+}
+.button{
+    width:200px;
+    height:60px;
+    background-color: #d21617;
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .8s;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-top: 25px;
+    margin-left: 15px;
+
+}
+p{
+
+    color:blue;
+    background-color:aquamarine;
+    font-size: 30px;
+    margin-top: 40px;
+    margin-left: 15px;
+    
+}
+.linha {
+    border: none;
+    height: 2px;
+    background-color: #333;
+    margin: 20px 0;
+  }
+  
+.containnerEdu{
+    height: 400px;
+    width:100%;
+    background-color: aquamarine;
+    margin-top: 15px;
+    display: flex;
+    align-items: flex-start;    
+}
+.imagemEdu{
+    background-color: aquamarine;
+    margin-top: 25px;
+
+}
+.imagemEdu img{
+    height: 300px;
+    width:200px;
+    background-color: aquamarine;
+    margin-left: 15px;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+    border: 3px solid#008000;
+}
+.imagemEdu:hover img {
+    content: url('contatos/360_F_389390965_lwqVX10TBdFH2WMBH6GGF8pcNiOhzfnb.jpg');}
+    footer{
+        background-color:aquamarine;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    span{
+        background-color: aquamarine;
+        font-family: 'kdam thmor pro',sans-serif;
+        color:#d21617;
+    }
+    .logoRodaPé{
+        background-color: aquamarine;
+        overflow: hidden;
+        width:auto;
+        height:auto;
+        border:2px solid floralwhite;
+        border-radius: 10px;
+    }
+
+    .footer-navlist{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+     .footer-navegation{
+           display:none;
+     }
+    @media(max-width:768px){
+        .footer-navegation{
+           display: block;
+        }
+        nav{
+               display: none;
+           }
+       
+         h1{
+            height:auto ;
+            width: auto;
+         }  
+         .containnerCo{
+            height:2000px;
+            width: 100%;
+            background-color: aquamarine;
+         }
+         .containnerGi{
+           width: 100%;
+           height:800px;
+           display: flex;
+           flex-direction: column;
+       }
+       .imagemGi{
+        margin-top: 25px;
+        width:80%;
+           height:400px;
+           display: flex;
+           flex-direction: column;
+       }
+       .imagemGi img{
+        height: 100%;
+        width: 100%;
+
+       }
+       
+       .sinopse{
+           width:100%;
+           display: flex;
+           flex-direction: column;
+           justify-content: space-between;
+        }
+        h3{
+            margin-top: 15px;
+        }
+        .containnerEdu{
+            margin-top: 15px;
+          width: 100%;
+             height:700px;
+             display: flex;
+             flex-direction: column;
+         }
+         .linha{
+            
+            height:5px;
+            width: 100%;
+
+         }
+         .button{
+            width:100%;
+            margin-top: 30px;
+         }
+    }

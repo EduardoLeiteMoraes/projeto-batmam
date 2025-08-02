@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+header
+{
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav{
+    width: 60%;
+}
+ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+li a { 
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: 2s;
+    font-family: 'kdam thmor pro',sans-serif;
+}
+li a:hover{
+    color:#d21617;
+}
+#logo{
+    background-color: blueviolet;
+    object-fit: cover;
+    width:150px;
+    height:90px;
+}
+.container{
+    background-color: blueviolet;
+    width:100%;
+    height:600px;
+    display: flex;
+    justify-content: space-between;
+
+}.descrição{
+    background-color: blueviolet;
+    width: 20%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.texto{
+    background-color: blueviolet;
+    color: black;
+    font-size: 19px;
+    font-weight: bold;
+    font-family: 'kdam thmor pro',sans-serif;
+    display: flex;
+    justify-items: center;
+    margin-top: 50px;
+    margin-left: 5px;
+}
+.contain{
+    background-color: blueviolet;
+    width: 75%; 
+    
+}
+.galeria{
+    background-color: blueviolet;
+    width: 800px;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 50px;
+    align-items: center;
+    gap: 60px;
+    pad: 20px;
+   
+}
+.galeria img{
+    width: 100%;
+    height: auto;
+    border:2px solid floralwhite;
+    border-radius: 10px;
+    object-fit: cover;
+    cursor: pointer;
+}
+.galeria img:hover{
+    transform: scale(2.02);
+    transition: transform 0.3s;
+}
+footer{
+    background-color: blueviolet;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+span{
+    background-color: blueviolet;
+    font-family: 'kdam thmor pro',sans-serif;
+    color:#fff;
+}
+.logoRodaPé{
+    background-color: blueviolet;
+    overflow: hidden;
+    width:auto;
+    height:auto;
+    border:2px solid floralwhite;
+    border-radius: 10px;  
+}
+    .footer-navlist{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+     .footer-navegation{
+           display:none;
+     }
+    @media(max-width:768px){
+        .footer-navegation{
+           display: block;
+        }
+        nav{
+               display: none;
+           }       
+  .container{
+       width: 100%;
+       display: flex;
+       flex-direction: column;
+       height: auto;
+   }
+   .descrição{
+       width:100%;
+       flex-direction: column;
+   }
+   .texto{
+       width:100%;   
+   }
+   .contain{
+       width: 100%;
+       
+   }
+   
+   .galeria {
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    gap: 10px;
+    width: 100%;
+    margin-top: 20px;
+  
+}
+
+.galeria img {
+   max-width:100%;
+    height: auto;
+    display: block;
+  }
+  .modal {
+    display: none; /* escondido por padrão */
+    position: fixed;
+    z-index: 9999;
+    padding-top: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.9); /* fundo escuro */
+  }
+  
+  .modal-conteudo {
+    margin: auto;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  .fechar {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 10000;
+  }
+  
+}

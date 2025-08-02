@@ -1,0 +1,116 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+
+header{
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333;
+}
+nav{
+    width: 60%;
+}
+ul{
+    display:flex;
+    width: 100%;
+    justify-content: space-between;
+}
+li a{
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'kdam thmor pro',sans-serif;
+}
+li a:hover{
+    color:#d21617;
+}
+#logo{
+    width: 150px;
+    height: 90px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    color: #d21617;
+    text-align: center;
+
+}
+section {
+    padding: 20px;
+    background-color: white;
+    max-width: 700px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+h2 {
+    color: #333;
+}
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+}
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #3366cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #254a99;
+}
+footer{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+span{
+    
+    font-family: 'kdam thmor pro',sans-serif;
+    color:#d21617;
+}
+.logoRodaPé{
+    
+    overflow: hidden;
+    width:auto;
+    height:auto;
+    border:2px solid floralwhite;
+    border-radius: 10px;  
+}
+.footer-navlist{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ .footer-navegation{
+       display:none;
+ }
+@media(max-width:768px){
+    .footer-navegation{
+       display: block;
+    }
+    nav{
+           display: none;
+       }
+
+      li a{
+        color: #333;
+      }
+}

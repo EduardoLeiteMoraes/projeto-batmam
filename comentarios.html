@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="bt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./estiloComentario.css">
+</head>
+<body>
+<header>
+    <img id="logo"  src="./download.png">
+  <nav>
+    <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./contato.html">Contato</a></li>
+        <li><a href="./fotos.html">Fotos</a></li>
+    </ul>
+  </nav>
+  
+</header>
+
+<h1>Página de Comentários</h1>
+<section>
+    <h2>O que é um comentário?</h2>
+    <p>Um comentário é uma forma de compartilhar sua opinião, dúvida ou sugestão sobre meu trabalho. Eles são importantes para ampliar , esclarecer ideias melhorando assim meu conhecimento.</p>
+</section>
+
+<section>
+    <h2>Deixe seu comentário:</h2>
+    <form onsubmit="event.preventDefault(); alert('Comentário enviado! (obrigado por ajudar meu trabalho)');">
+        <label for="comentario">Escreva seu comentário:</label><br>
+        <textarea id="comentario" name="comentario" placeholder="Digite aqui..."></textarea><br>
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+<footer>
+    <img class="logoRodaPé"  style="object-fit: contain;"  src="./download.png">
+  <span> todos os direitos reservados © </span> 
+  <span>Desenvolvido por Eduardo Moraes</span>   
+  </footer>
+  <nav class="footer-navegation">
+    <ul class="footer-navlist">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./contato.html">contato</a></li>
+        <li><a href="./fotos.html">fotos</a></li>        
+    </ul>
+</nav>
+</body>
+</html>
